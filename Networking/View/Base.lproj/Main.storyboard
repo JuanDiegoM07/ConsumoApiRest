@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Networking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mm-18-cfH">
+                                <rect key="frame" x="16" y="60" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GET USER"/>
+                                <connections>
+                                    <action selector="getUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ylk-45-HF8"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="V4d-j7-pid">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rm9-8T-5lG">
+                                <rect key="frame" x="16" y="144" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5v-iH-Nx7">
+                                <rect key="frame" x="16" y="107" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caX-Xy-WdJ">
+                                <rect key="frame" x="16" y="181" width="382" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yst-Fw-A5f">
+                                <rect key="frame" x="16" y="218" width="382" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Post User"/>
+                                <connections>
+                                    <action selector="addUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="btk-ao-wy6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uu7-Pp-wWV">
+                                <rect key="frame" x="167" y="283" width="80" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Put User"/>
+                                <connections>
+                                    <action selector="updateUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yk7-gh-Md5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2l-Rs-epg">
+                                <rect key="frame" x="157" y="355" width="100" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete User"/>
+                                <connections>
+                                    <action selector="deleteUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QP9-Ex-F3R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X2l-Rs-epg" firstAttribute="top" secondItem="uu7-Pp-wWV" secondAttribute="bottom" constant="41" id="3gD-Kj-lch"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yst-Fw-A5f" secondAttribute="trailing" constant="16" id="5Jz-rf-YHB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mm-18-cfH" secondAttribute="trailing" constant="16" id="7E1-WS-ISl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rm9-8T-5lG" secondAttribute="trailing" constant="16" id="8QN-FQ-bZy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X2l-Rs-epg" secondAttribute="trailing" constant="157" id="8ly-iN-y8Y"/>
+                            <constraint firstItem="uu7-Pp-wWV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="167" id="Cx1-BF-r9d"/>
+                            <constraint firstItem="caX-Xy-WdJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="M5Q-H7-2J5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s5v-iH-Nx7" secondAttribute="trailing" constant="16" id="Nsy-v3-UvU"/>
+                            <constraint firstItem="uu7-Pp-wWV" firstAttribute="top" secondItem="yst-Fw-A5f" secondAttribute="bottom" constant="34" id="OOx-MV-r7x"/>
+                            <constraint firstItem="yst-Fw-A5f" firstAttribute="top" secondItem="caX-Xy-WdJ" secondAttribute="bottom" constant="16" id="PlR-DT-iO1"/>
+                            <constraint firstItem="s5v-iH-Nx7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Sm4-Pu-uzq"/>
+                            <constraint firstItem="5mm-18-cfH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="St2-bq-xhn"/>
+                            <constraint firstItem="rm9-8T-5lG" firstAttribute="top" secondItem="s5v-iH-Nx7" secondAttribute="bottom" constant="16" id="T7f-I3-MLj"/>
+                            <constraint firstItem="X2l-Rs-epg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="157" id="Upw-QI-nvl"/>
+                            <constraint firstItem="rm9-8T-5lG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZAV-l7-h2n"/>
+                            <constraint firstItem="V4d-j7-pid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bfN-nw-I20"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uu7-Pp-wWV" secondAttribute="trailing" constant="167" id="c7Q-0y-2kI"/>
+                            <constraint firstItem="5mm-18-cfH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="d0g-f9-yUc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="caX-Xy-WdJ" secondAttribute="trailing" constant="16" id="pkW-fh-dy6"/>
+                            <constraint firstItem="s5v-iH-Nx7" firstAttribute="top" secondItem="5mm-18-cfH" secondAttribute="bottom" constant="16" id="sSF-pV-0XZ"/>
+                            <constraint firstItem="yst-Fw-A5f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tFa-pP-NHb"/>
+                            <constraint firstItem="V4d-j7-pid" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x8h-Jm-kUl"/>
+                            <constraint firstItem="caX-Xy-WdJ" firstAttribute="top" secondItem="rm9-8T-5lG" secondAttribute="bottom" constant="16" id="yLH-7q-Pqw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="V4d-j7-pid" id="bZd-uT-MZ0"/>
+                        <outlet property="emailLabel" destination="rm9-8T-5lG" id="Dpj-gx-JPf"/>
+                        <outlet property="idLabel" destination="caX-Xy-WdJ" id="Oxg-3I-3EL"/>
+                        <outlet property="nameLabel" destination="s5v-iH-Nx7" id="V3s-Nl-KoX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
